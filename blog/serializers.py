@@ -8,10 +8,10 @@ class CategorySerializer(serializers.ModelSerializer):
         exclude = []
 
 #? bu haliyle olursa user ve category nin sadece id si olur
-class PostsSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Post
-        exclude = []
+# class PostSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Post
+#         exclude = []
 
 #! nested serializer
 class PostSerializer(serializers.ModelSerializer):

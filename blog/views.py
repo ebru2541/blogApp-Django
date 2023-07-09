@@ -2,7 +2,7 @@
 from rest_framework.viewsets import ModelViewSet
 from .serializers import (
     Category ,CategorySerializer,
-    Post, PostSerializer , PostsSerializer
+    Post, PostSerializer 
 )
 
 class CategoryView(ModelViewSet):
@@ -16,9 +16,6 @@ class PostView(ModelViewSet):
 
 
 
-class PostsView(ModelViewSet):
-    queryset=Post.objects.all()
-    serializer_class=PostsSerializer
 
 
 
